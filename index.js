@@ -11,6 +11,11 @@ const PORT = process.env.PORT || 80;
 app.use(cors());
 app.use(bodyParser.json());
 
+var maillist = [
+  'contact@altorcrossfit.com',
+  'youness.dradeb@gmail.com',
+  'sgtelhami@gmail.com',
+];
 
 var smtpConfig = {
   host: 'mail.altorcrossfit.com',
@@ -30,7 +35,7 @@ app.post('/send-email', (req, res) => {
 
   const mailOptions = {
     from: 'form@altorcrossfit.com', // Sender address
-    to : 'contact@altorcrossfit.com', // Recipient address
+    to : maillist , // Recipient address
     subject : 'New contact', // Email subject
     text, // Email body
   };
