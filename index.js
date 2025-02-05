@@ -15,6 +15,7 @@ var maillist = [
   'contact@altorcrossfit.com',
   'youness.dradeb@gmail.com',
   'sgtelhami@gmail.com',
+  'crossfitaltor@gmail.com'
 ];
 
 var smtpConfig = {
