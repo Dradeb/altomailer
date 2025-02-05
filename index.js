@@ -7,7 +7,6 @@ const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 80;
-const rateLimit = require("express-rate-limit");
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
